@@ -18,6 +18,7 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
 import com.apap.tutorial6.model.FlightModel;
 import com.apap.tutorial6.service.FlightService;
+import com.apap.tutorial6.service.PilotService;
 
 /*
  * FlightControllerTest
@@ -31,6 +32,9 @@ public class FlightControllerTest {
 	
 	@MockBean
 	private FlightService flightService;
+	
+	@MockBean
+	private PilotService pilotService;
 	
 	@Test
 	public void givenFlightNumber_whenViewFlight_thenReturnJsonFlight() throws Exception {
